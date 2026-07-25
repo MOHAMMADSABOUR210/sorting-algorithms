@@ -1,5 +1,5 @@
 import unittest
-from algorithms.Bubble_Sort import bubble_sort
+from algorithms.comparison.Bubble_Sort import bubble_sort
 
 
 class TestBubbleSort(unittest.TestCase):
