@@ -1,4 +1,5 @@
 def selection_sort(arr: list[int]) -> list[int]:
+
     n = len(arr)
 
     for i in range(n):
