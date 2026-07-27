@@ -4,12 +4,15 @@ from algorithms.comparison.Bubble_Sort import bubble_sort
 from algorithms.comparison.Selection_Sort import selection_sort
 from algorithms.comparison.Insertion_Sort import insertion_sort
 from algorithms.comparison.Shell_Sort import shell_sort
+from algorithms.comparison.Marg_sort import merge_sort
+
 
 SORTING_FUNCTIONS = [
     bubble_sort,
     selection_sort,
     insertion_sort,
     shell_sort,
+    merge_sort,
 ]
 
 
