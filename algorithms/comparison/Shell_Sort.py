@@ -1,4 +1,8 @@
-def shell_sort(arr):
+from typing import TypeVar
+
+T = TypeVar("T")
+
+def shell_sort(arr: list[T]) -> list[T]:
     n = len(arr)
     gap = n // 2
 
