@@ -1,4 +1,8 @@
-def insertion_sort(arr: list[int]) -> list[int]:
+from typing import TypeVar
+
+T = TypeVar("T")
+
+def insertion_sort(arr: list[T]) -> list[T]:
 
     sorted_arr = arr.copy()
 

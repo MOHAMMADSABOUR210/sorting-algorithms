@@ -1,4 +1,8 @@
-def bubble_sort(arr: list[int]) -> list[int]:
+from typing import TypeVar
+
+T = TypeVar("T")
+
+def bubble_sort(arr: list[T]) -> list[T]:
     n = len(arr)
 
     for i in range(n):
