@@ -1,4 +1,12 @@
-def randomized_quick_sort(arr, low=0, high=None):
+from random import randint
+from typing import TypeVar
+
+T = TypeVar("T")
+
+
+def randomized_quick_sort(
+    arr: list[T], low: int = 0, high: int | None = None
+) -> list[T]:
     if high is None:
         high = len(arr) - 1
 
@@ -10,16 +18,14 @@ def randomized_quick_sort(arr, low=0, high=None):
     return arr
 
 
-def randomized_partition(arr, low, high):
-    import random
-
-    random_index = random.randint(low, high)
+def randomized_partition(arr: list[T], low: int, high: int) -> int:
+    random_index = randint(low, high)
     arr[random_index], arr[high] = arr[high], arr[random_index]
 
     return partition(arr, low, high)
 
 
-def partition(arr, low, high):
+def partition(arr: list[T], low: int, high: int) -> int:
     pivot = arr[high]
     i = low - 1
 
