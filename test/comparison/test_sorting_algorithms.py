@@ -5,6 +5,7 @@ from algorithms.comparison.Selection_Sort import selection_sort
 from algorithms.comparison.Insertion_Sort import insertion_sort
 from algorithms.comparison.Shell_Sort import shell_sort
 from algorithms.comparison.Marg_sort import merge_sort
+from algorithms.comparison.Quick_Sort import quick_sort
 
 
 SORTING_FUNCTIONS = [
@@ -13,6 +14,7 @@ SORTING_FUNCTIONS = [
     insertion_sort,
     shell_sort,
     merge_sort,
+    quick_sort,
 ]
 
 
