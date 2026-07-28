@@ -1,4 +1,8 @@
-def heap_sort(arr):
+from typing import TypeVar
+
+T = TypeVar("T")
+
+def heap_sort(arr: list[T]) -> list[T]:
     n = len(arr)
 
     def heapify(arr, n, i):
