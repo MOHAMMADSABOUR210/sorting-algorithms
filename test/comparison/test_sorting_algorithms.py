@@ -6,7 +6,7 @@ from algorithms.comparison.Insertion_Sort import insertion_sort
 from algorithms.comparison.Shell_Sort import shell_sort
 from algorithms.comparison.Marg_sort import merge_sort
 from algorithms.comparison.Quick_Sort import quick_sort
-
+from algorithms.comparison.Randomized_Quick_Sort import randomized_quick_sort
 
 SORTING_FUNCTIONS = [
     bubble_sort,
@@ -15,6 +15,7 @@ SORTING_FUNCTIONS = [
     shell_sort,
     merge_sort,
     quick_sort,
+    randomized_quick_sort,
 ]
 
 
