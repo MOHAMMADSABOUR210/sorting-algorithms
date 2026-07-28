@@ -1,4 +1,11 @@
-def quick_sort(arr, low=0, high=None):
+from typing import TypeVar
+
+T = TypeVar("T")
+
+
+def quick_sort(
+    arr: list[T], low: int = 0, high: int | None = None
+) -> list[T]:
     if high is None:
         high = len(arr) - 1
 
@@ -10,7 +17,7 @@ def quick_sort(arr, low=0, high=None):
     return arr
 
 
-def partition(arr, low, high):
+def partition(arr: list[T], low: int, high: int) -> int:
     pivot = arr[high]
     i = low - 1
 
